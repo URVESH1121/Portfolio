@@ -1,0 +1,45 @@
+.contact__container {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.contact__container a {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  background: var(--color-primary);
+  color: var(--color-white);
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-1);
+}
+
+.contact__container a:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-0.5rem);
+}
+
+
+.particles{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE  */
+@media screen and (max-width: 600px) {
+  .contact__container {
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact__container a {
+    width: 4rem;
+    font-size: 1.5rem;
+  }
+}

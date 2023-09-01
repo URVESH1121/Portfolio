@@ -1,0 +1,52 @@
+.gita_container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.heading p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  width: 30rem;
+  margin-inline: auto;
+}
+.gita_container img {
+  width: 45rem;
+  height: 30rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  /* display: block; */
+}
+.quote-text {
+  margin-top: 1.5rem;
+  width: 45rem;
+  margin-inline: auto;
+  color: var(--color-black);
+}
+.quote-auth {
+  margin-top: 1rem;
+  color: var(--color-primary);
+}
+
+/* RESPONSIVE ABOUT FOR MOBILE  */
+@media screen and (max-width: 1024px) {
+  .gita_container img{
+    width: 35rem;
+    height: 20rem;
+  }
+  .quote-text {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .gita_container img{
+        width: 18rem;
+        height: 13rem;
+    }
+    .quote-text {
+        width: 22rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
